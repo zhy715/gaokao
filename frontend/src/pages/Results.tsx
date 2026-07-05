@@ -10,8 +10,6 @@ const TIER_LABELS: Record<string, { label: string; cls: string }> = {
   safety: { label: '🟢 保底', cls: 'tier-badge-safety' },
 }
 
-const TIER_ORDER: Record<string, number> = { reach: 0, match: 1, safety: 2 }
-
 interface Props {
   state: AppState
 }

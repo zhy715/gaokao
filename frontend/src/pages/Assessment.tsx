@@ -9,7 +9,7 @@ interface Props {
   updateState: (p: Partial<AppState>) => void
 }
 
-export default function Assessment({ state, updateState }: Props) {
+export default function Assessment({ updateState }: Props) {
   const navigate = useNavigate()
   const [questions, setQuestions] = useState<AssessmentQuestion[]>([])
   const [answers, setAnswers] = useState<number[]>([])
